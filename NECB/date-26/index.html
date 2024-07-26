@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Check</title>
+</head>
+
+<body>
+
+    <form id="primeForm">
+        <input type="number" id="primeCheck" required placeholder="Enter a number">
+        <button type="submit">Check</button>
+        <span id="result"></span>
+    </form>
+
+    <script>
+        document.getElementById("primeForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const num = parseInt(document.getElementById("primeCheck").value, 10);
+            let isPrime = true;
+
+            if (num < 2) {
+                isPrime = false;
+            } else {
+                for (let i = 2; i <= Math.sqrt(num); i++) {
+                    if (num % i === 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+            }
+            
+            if (isPrime) {
+                document.getElementById("result").textContent = num + " is a prime number";
+            } else {
+                document.getElementById("result").textContent = num + " is not a prime number";
+            }
+        });
+    </script>
+
+</body>
+
+</html>
