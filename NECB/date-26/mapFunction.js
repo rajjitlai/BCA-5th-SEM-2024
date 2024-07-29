@@ -20,3 +20,5 @@ const result = Data.map((item, idx) => {
 { 'item...': { id: 1, name: 'John', age: 25 }, 'index...': 0 }
 { 'item...': { id: 2, name: 'Jane', age: 30 }, 'index...': 1 }
 */
+
+// current, index, array
