@@ -1,0 +1,11 @@
+{
+    "name": "NECB-Node-App",
+    "version": "1.0.0",
+    "description": "Node.js application for NECB",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "author": "Your Name",
+    "license": "ISC"
+}
