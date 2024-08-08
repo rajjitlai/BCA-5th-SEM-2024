@@ -1,5 +1,3 @@
-// single ID check
-
 import { NextRequest, NextResponse } from "next/server";
 
 const data = [
