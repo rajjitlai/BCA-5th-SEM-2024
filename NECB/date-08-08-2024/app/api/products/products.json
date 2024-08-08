@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "name": "Maternity Clothing",
+        "category": "Demographic",
+        "size": "5"
+    },
+    {
+        "id": "2",
+        "name": "Sensitive Skin Product",
+        "category": "Customer needs",
+        "size": "null"
+    },
+    {
+        "id": "3",
+        "name": "Foods and Beverages",
+        "category": "Industry",
+        "size": "null"
+    }
+]
