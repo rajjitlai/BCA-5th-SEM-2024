@@ -28,3 +28,30 @@ export async function GET(req: NextRequest, { params }: { params: { id: string }
 
     return NextResponse.json({ user, products: check }, { status: 200 })
 }
+
+// update the user
+export async function PUT(req: NextRequest, { params }: { params: { id: string } }) {
+    const body = await req.json();
+    const index = users.findIndex((user: any) => user.id === params.id);
+    
+    if (index !== -1) {
+        users[index] = body;
+
+        return NextResponse.json(body, { status: 200 });
+    } else {
+        return NextResponse.json({ status: 404, message: 'User not found' });
+    }
+}
+
+// delete the user
+export async function DELETE(req: NextRequest, { params }: { params: { id: string } }) {
+    const index = users.findIndex((user: any) => user.id === params.id);
+
+    if (index !== -1) {
+        users.splice(index, 1);
+
+        return NextResponse.json({ message: 'User deleted successfully' }, { status: 200 });
+    } else {
+        return NextResponse.json({ status: 404, message: 'User not found' });
+    }
+}
