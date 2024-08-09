@@ -3,19 +3,6 @@ import { NextRequest, NextResponse } from "next/server";
 const users = require('../users.json')
 const products = require('../../products/products.json')
 
-// const data = [
-//     {
-//         id: '1',
-//         name: 'jack',
-//         department: 'cse'
-//     },
-//     {
-//         id: '2',
-//         name: 'jill',
-//         department: 'eee'
-//     }
-// ]
-
 // export async function GET(req: NextRequest, { params }: { params: { id: string } }) {
 //     if (params.id == data[0].id) {
 //         return NextResponse.json(data[0])
