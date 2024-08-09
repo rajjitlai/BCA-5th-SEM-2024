@@ -16,5 +16,11 @@
         "name": "Foods and Beverages",
         "category": "Industry",
         "size": "null"
+    },
+    {
+        "id": "4",
+        "name": "Hygiene Products",
+        "category": "Demographic",
+        "size": "3"
     }
 ]

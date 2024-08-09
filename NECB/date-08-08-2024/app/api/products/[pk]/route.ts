@@ -10,3 +10,4 @@ export async function GET(req: NextRequest, { params }: { params: { pk: string }
         return NextResponse.json({ status: 405, message: 'Product not found' });
     }
 }
+

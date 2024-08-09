@@ -1,0 +1,17 @@
+[
+    {
+        "id": "1",
+        "name": "jack",
+        "category": "Demographic"
+    },
+    {
+        "id": "2",
+        "name": "jill",
+        "category":"Industry"
+    },
+    {
+        "id": "3",
+        "name": "john",
+        "category": "Customer needs"
+    }
+]
