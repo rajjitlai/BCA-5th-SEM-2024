@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace HelloWorldApplication
 {
@@ -6,8 +6,8 @@ namespace HelloWorldApplication
     {
         static void Main(string[] args)
         {
-            console.Write("Hello World");
-            console.ReadKey();
+            Console.Write("Hello World");
+            Console.ReadKey();
         }
     }
 }

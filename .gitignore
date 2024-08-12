@@ -1,1 +1,8 @@
+# folders
 .vs
+bin
+obj
+
+# files
+dotNET.csproj
+dotNET.sln
