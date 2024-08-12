@@ -1,11 +1,14 @@
-import Products from "./components/Products";
-import Users from "./components/Users";
+import React from 'react'
+import Users from './components/Users'
+import Products from './components/Products'
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className="h-screen flex items-center justify-center w-full gap-10">
+    <main className='w-full h-screen flex items-center justify-center gap-5'>
       <Users />
       <Products />
     </main>
-  );
+  )
 }
+
+export default Home
