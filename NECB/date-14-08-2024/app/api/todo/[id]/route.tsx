@@ -3,6 +3,17 @@ import todoData from "@/app/api/todo/todo.json"
 
 const date = new Date().toISOString()
 
+// get single data
+export async function GET(req: NextRequest, { params }: { params: { id: string } }) {
+    const data = todoData.find((item: any) => item.id === params.id)
+
+    if (!data) {
+        return NextResponse.json({ status: 404, message: "Task not found" })
+    } else {
+        return NextResponse.json(data)
+    }
+}
+
 // update the Todo item
 export async function PUT(req: NextRequest, { params }: { params: { id: string } }) {
     const data = await req.json();
