@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "name": "Walk",
+        "description": "Take a walk in the morning to maintain a healthy lifestyle",
+        "createdAt":"",
+        "updatedAt":""
+    },
+    {
+        "id": "2",
+        "name": "Code",
+        "description": "DO some coding and create new projects",
+        "createdAt":"",
+        "updatedAt":""
+    },{
+        "id": "3",
+        "name": "Bathing",
+        "description": "Take a bath to keep your body neat and clean",
+        "createdAt":"",
+        "updatedAt":""
+    }
+]
