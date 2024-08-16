@@ -48,12 +48,6 @@ const ToDoList = () => {
                     </div>
                 ))}
             </div>
-            {/* add new item */}
-            <div className=''></div>
-            {/* update item */}
-            <div className=''></div>
-            {/* delete item */}
-            <div className=''></div>
         </div>
     )
 }
