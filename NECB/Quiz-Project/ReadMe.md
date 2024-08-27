@@ -23,7 +23,7 @@
 ## Debug
 
     If you face any issue running the scripts saying that running scripts is disabled, run the following command by opening the terminal as administrator
-    > Set_ExecutionPolicy unrestricted
+    > Set-ExecutionPolicy unrestricted
 
 ## Starting the server
 
