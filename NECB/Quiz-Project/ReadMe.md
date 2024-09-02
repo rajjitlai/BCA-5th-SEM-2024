@@ -30,9 +30,22 @@
     - Change directory inside project_name\project_name and do the following
     - python manage.py runserver
 
+## Starting DB settings
+
+After we have finished making our database designs and created the models, we can migrate them
+
+    - python manage.py makemigrations
+    - python manage.py migrate
+    - python manage.py createsuperuser --username admin
+    
+    Give a password and press enter
+    Then register the sites in the admin.py
+
 ## Contributors
 
     - Rajjit Laishram
     - Sanamatum Maibam
     - Aris Hodam
-    - 
+    - Irom Jamesbond 
+    - Nathan Keishing
+    - Kelvin Laishram

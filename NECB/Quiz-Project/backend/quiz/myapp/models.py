@@ -1,15 +1,7 @@
 from django.db import models
+from django.contrib.auth.models import User
 
-# Create your models here.
-from django.db import models
-
-class User(models.Model):
-    username = models.CharField(max_length=255)
-    email = models.EmailField(max_length=255)
-    password = models.CharField(max_length=255)
-
-    def __str__(self):
-        return self.username
+# by default User is in django-admin
 
 class Category(models.Model):
     category = models.CharField(max_length=255)
