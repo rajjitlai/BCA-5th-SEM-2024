@@ -4,9 +4,9 @@
 
 ## Development Stack Used
 
-    1.
-    2. 
-    3. 
+    1. Python
+    2. djangorestframework
+    3. sqlite
 
 ## Initial steps to be performed
 
@@ -38,21 +38,22 @@ After we have finished making our database designs and created the models, we ca
     - python manage.py migrate
     - python manage.py createsuperuser --username admin
 
-    Register the app in settings.py by adding this
+    Register the app in project_name\settings.py by adding this
     - INSTALLED_APPS = [
         'myApp'
     ]
     
     Give a password and press enter
-    Then register the sites in the admin.py, and an example is given below
-        - from django.contrib import admin
-        - from .models import *
-        - admin.site.register(Profile)
-        - admin.site.register(Category)
-        - admin.site.register(CategoryInfo)
-        - admin.site.register(Quiz)
-        - admin.site.register(QuestionOptions)
-        - admin.site.register(Leaderboard)
+    Then register the sites in the project_app\admin.py, and an example code is given below
+        from django.contrib import admin
+        from .models import *
+        admin.site.register(Profile)
+        admin.site.register(Category)
+        admin.site.register(CategoryInfo)
+        admin.site.register(Quiz)
+        admin.site.register(QuestionOptions)
+        admin.site.register(Leaderboard)
+
     These are the models that have been created in the models.py
 
 ## Contributors
