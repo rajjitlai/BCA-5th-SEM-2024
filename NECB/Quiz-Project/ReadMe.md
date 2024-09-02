@@ -37,6 +37,11 @@ After we have finished making our database designs and created the models, we ca
     - python manage.py makemigrations
     - python manage.py migrate
     - python manage.py createsuperuser --username admin
+
+    Register the app in settings.py by adding this
+    - INSTALLED_APPS = [
+        'myApp'
+    ]
     
     Give a password and press enter
     Then register the sites in the admin.py, and an example is given below
