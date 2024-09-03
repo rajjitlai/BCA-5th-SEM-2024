@@ -56,6 +56,29 @@ After we have finished making our database designs and created the models, we ca
 
     These are the models that have been created in the models.py
 
+## API testing and testing requests
+
+    Go to project_name\settings.py and add this line in the INSTALLED_APPS
+    - INSTALLED_APPS = [
+        'rest_framework'
+    ]
+
+    Got to project_app\views.py and add the following code
+        from rest_framework.decorators import api_view
+        from rest_framework.response import Response
+        @api_view(['GET'])
+        def testreq(request):
+        data = {
+            'name': 'John',
+            'age': 25,
+            'address': '123 Main St'
+        }
+        return Response(data)
+
+    Go to project_name\urls.py and add these lines
+        from project_app import views
+        path('testreq/', views.testreq) # inside urlpatterns
+
 ## Contributors
 
     - Rajjit Laishram
