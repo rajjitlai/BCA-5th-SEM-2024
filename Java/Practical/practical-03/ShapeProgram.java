@@ -13,11 +13,12 @@ class Rectangle extends Shape {
 
     @Override
     public void readData() {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter length of the rectangle: ");
-        length = sc.nextDouble();
-        System.out.print("Enter breadth of the rectangle: ");
-        breadth = sc.nextDouble();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter length of the rectangle: ");
+            length = sc.nextDouble();
+            System.out.print("Enter breadth of the rectangle: ");
+            breadth = sc.nextDouble();
+        }
     }
 
     @Override
@@ -31,9 +32,10 @@ class Circle extends Shape {
 
     @Override
     public void readData() {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter radius of the circle: ");
-        radius = sc.nextDouble();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter radius of the circle: ");
+            radius = sc.nextDouble();
+        }
     }
 
     @Override
@@ -44,27 +46,28 @@ class Circle extends Shape {
 
 public class ShapeProgram {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Shape shape = null;
+        try (Scanner sc = new Scanner(System.in)) {
+            Shape shape = null;
 
-        System.out.println("Choose a shape to calculate area:");
-        System.out.println("1. Rectangle");
-        System.out.println("2. Circle");
-        int choice = sc.nextInt();
+            System.out.println("Choose a shape to calculate area:");
+            System.out.println("1. Rectangle");
+            System.out.println("2. Circle");
+            int choice = sc.nextInt();
 
-        switch (choice) {
-            case 1:
-                shape = new Rectangle();
-                break;
-            case 2:
-                shape = new Circle();
-                break;
-            default:
-                System.out.println("Invalid choice!");
-                return;
+            switch (choice) {
+                case 1:
+                    shape = new Rectangle();
+                    break;
+                case 2:
+                    shape = new Circle();
+                    break;
+                default:
+                    System.out.println("Invalid choice!");
+                    return;
+            }
+
+            shape.readData();
+            System.out.println("The area of the shape is: " + shape.area());
         }
-
-        shape.readData();
-        System.out.println("The area of the shape is: " + shape.area());
     }
 }
