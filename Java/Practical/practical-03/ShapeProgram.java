@@ -1,53 +1,13 @@
 import java.util.Scanner;
 
-abstract class Shape {
-
-    public abstract void readData();
-
-    public abstract double area();
-}
-
-class Rectangle extends Shape {
-    private double length;
-    private double breadth;
-
-    @Override
-    public void readData() {
-        try (Scanner sc = new Scanner(System.in)) {
-            System.out.print("Enter length of the rectangle: ");
-            length = sc.nextDouble();
-            System.out.print("Enter breadth of the rectangle: ");
-            breadth = sc.nextDouble();
-        }
-    }
-
-    @Override
-    public double area() {
-        return length * breadth;
-    }
-}
-
-class Circle extends Shape {
-    private double radius;
-
-    @Override
-    public void readData() {
-        try (Scanner sc = new Scanner(System.in)) {
-            System.out.print("Enter radius of the circle: ");
-            radius = sc.nextDouble();
-        }
-    }
-
-    @Override
-    public double area() {
-        return Math.PI * radius * radius;
-    }
-}
+import P1.Shape;
+import P2.Rectangle;
+import P3.Circle;
 
 public class ShapeProgram {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
-            Shape shape = null;
+            Shape shape;
 
             System.out.println("Choose a shape to calculate area:");
             System.out.println("1. Rectangle");
