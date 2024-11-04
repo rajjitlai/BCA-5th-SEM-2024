@@ -1,17 +1,79 @@
-# .NET Assignments 2024, BCA 5th Semester, NIELIT Imphal
+# .NET Assignments - BCA 5th Semester, NIELIT Imphal, 2024
 
-Q1. Design and develop basic calculator operations having 6 buttons (+, -, *, /, ^ and clear button).
+This repository contains solutions to the .NET assignments for the BCA 5th semester. Each question is solved in both C# and VB.NET (where applicable) to illustrate key programming concepts.
 
-Q2. Design and develop a UI to display a list of n even numbers and a list of odd numbers
+## Table of Contents
 
-Q3. Design a UI to display the series 1 4 9 16 25 36 ...
+1. [Basic Calculator Operations](Question01)
+2. [Even and Odd Number Lists](Question02)
+3. [Number Series](Question03)
+4. [Factorial Calculator](Question04)
+5. [Constructors in C# and VB.NET](Question05)
+6. [Inheritance in C# and VB.NET](Question06)
+7. [Interfaces and Multiple Interfaces](Question07)
+8. [ArrayList and Dictionary](Question08)
 
-Q4. Design an UI to find the factorial of a number.
+---
 
-Q5. Write a program in C# and VB.NET illustrating the concepts of default constructor and parameterized constructor.
+### Question 01: Basic Calculator Operations
 
-Q6. Write a program in C# and VB.NET the concepts of single inheritance, multi-level inheritance.
+Design and develop a basic calculator with operations for addition, subtraction, multiplication, division, exponentiation, and a clear function.
 
-Q7. Write a program in C# and VB.NET illustrating the concepts of interface & multiple interface.
+- [Solution](Question01/Calculator/)
 
-Q8. Write a program in C# and VB.NET illustrating the concepts of array list and dictionary.
+### Question 02: Even and Odd Number Lists
+
+Create a UI that displays lists of n even numbers and n odd numbers.
+
+- [Solution](Question02/EvenOddGenerator/)
+
+### Question 03: Number Series
+
+Display a series of numbers in the form 1, 4, 9, 16, 25, 36, ...
+
+- [Solution](Question03/SquareSeries/)
+
+### Question 04: Factorial Calculator
+
+Design a UI to calculate the factorial of a given number.
+
+- [Solution](Question04/Factorial/)
+
+### Question 05: Constructors in C# and VB.NET
+
+Write programs that illustrate the concepts of default and parameterized constructors.
+
+- [Solution in C#](Question05/ConstrucCS/)
+- [Solution in VB.NET](Question05/ConstrucVB/)
+
+### Question 06: Inheritance in C# and VB.NET
+
+Write programs demonstrating single inheritance and multi-level inheritance.
+
+- [Solution in C#](Question06/)
+- [Solution in VB.NET](Question06/)
+
+### Question 07: Interfaces and Multiple Interfaces
+
+Write programs that illustrate the use of interfaces and multiple interfaces.
+
+- [Solution in C#](Question07/)
+- [Solution in VB.NET](Question07/)
+
+### Question 08: ArrayList and Dictionary
+
+Write programs demonstrating the use of `ArrayList` and `Dictionary`.
+
+- [Solution in C#](Question08/)
+- [Solution in VB.NET](Question08/)
+
+---
+
+### Submission Details
+
+- **Submitted by:** [Rajjit Laishram](https://mypersonalportfolio-rl.netlify.app/), BCA 5th Semester, BC1745
+- **Submitted to:** Ma'am Simran, .NET Lecturer, NIELIT Imphal
+
+---
+
+Each solution can be found in its respective folder. Click on the links to access the code.
