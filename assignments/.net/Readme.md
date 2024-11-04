@@ -4,7 +4,7 @@ Q1. Design and develop basic calculator operations having 6 buttons (+, -, *, /,
 
 Q2. Design and develop a UI to display a list of n even numbers and a list of odd numbers
 
-Q3. Design a UI to display the series 14 9 16 25 36 ...
+Q3. Design a UI to display the series 1 4 9 16 25 36 ...
 
 Q4. Design an UI to find the factorial of a number.
 
