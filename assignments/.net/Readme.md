@@ -14,4 +14,4 @@ Q6. Write a program in C# and VB.NET the concepts of single inheritance, multi-l
 
 Q7. Write a program in C# and VB.NET illustrating the concepts of interface & multiple interface.
 
-Q8. Write a program in C# and VB.NET illustrating the concepts of array list and dictionary.
+Q8. Write a program in C# and VB.NET illustrating the concepts of array list and dictionary.
