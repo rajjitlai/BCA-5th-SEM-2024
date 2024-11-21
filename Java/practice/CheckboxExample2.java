@@ -1,8 +1,8 @@
 import java.awt.*;
 import java.awt.event.*;
 
-public class CheckboxExample2{
-    CheckboxExample2(){
+public class CheckboxExample2 {
+    CheckboxExample2() {
         Frame f = new Frame("Checkbox example");
         final Label label = new Label();
 
@@ -17,22 +17,22 @@ public class CheckboxExample2{
         f.add(label);
 
         checkbox1.addItemListener(new ItemListener() {
-            public void itemStateChanged(ItemEvent e){
+            public void itemStateChanged(ItemEvent e) {
                 label.setText("C++ Checkbox: " + (e.getStateChange() == 1 ? "checked" : "unchecked"));
             }
-        })
+        });
         checkbox2.addItemListener(new ItemListener() {
-            public void itemStateChanged(ItemEvent e){
+            public void itemStateChanged(ItemEvent e) {
                 label.setText("Java Checkbox: " + (e.getStateChange() == 1 ? "checked" : "unchecked"));
             }
-        })
+        });
 
-        f.setSize(400,400);
+        f.setSize(400, 400);
         f.setLayout(null);
         f.setVisible(true);
     }
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
         new CheckboxExample2();
     }
 }
